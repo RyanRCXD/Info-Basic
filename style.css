@@ -868,6 +868,11 @@ footer {
         font-size: 1.8rem;
     }
 
+    .divisor:last-child {
+        position: absolute;
+        right: 5%; /* Posiciona o segundo divisor 10% da direita */
+    }
+
 }
 
 @media (max-width: 480px) {
