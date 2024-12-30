@@ -20,15 +20,19 @@ html {
 
 /* ================== Estrutura Geral ================== */
 .container {
+    position: relative;
     width: 90%;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
 
-.divisor {
-    width: auto;
-    height: 100%;
+.divisor:first-child {
+    left: 10%;
+}
+
+.divisor:last-child {
+    right: 10%;
 }
 
 .holder {
@@ -121,7 +125,7 @@ header nav ul li a:active::after {
     text-align: center;
 }
 
-.justyfyed {
+.justifyed {
     text-align: justify;
 }
 
@@ -378,6 +382,8 @@ header nav ul li a:active::after {
     border: none;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    width: 280px;
+    height: 150px;
 }
 
 #material .videos p {
@@ -393,6 +399,8 @@ header nav ul li a:active::after {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
     text-align: justify;
     margin: auto;
+    max-height: 400px;
+    max-width: 300px;
 }
 
 #material .topic {
@@ -719,6 +727,11 @@ footer {
         font-size: 14px;
     }
 
+    .aboutback {
+        width: 93%;
+        max-width: 93%;
+    }
+
     .support-popup {
         width: 90%;
         max-width: 280px;
@@ -814,6 +827,16 @@ footer {
     .support-link {
         font-size: 11px;
         height: 1.8rem;
+    }
+
+    .aboutback {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        max-width: 100%;
     }
 
 }
